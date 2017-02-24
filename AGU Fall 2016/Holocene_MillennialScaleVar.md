@@ -198,7 +198,7 @@ Mean periodicity &#177; standard error = 2391 &#177; 138 years.
 
 <p>Despite large uncertainties in the location of the spectral peak within each individual record arising from age model uncertainty, sea surface variability of ~1000 years, ~1500 years, and ~2500 years are present in at least 70-95% of the ensemble spectra.</p>
 
-<p> Remarkably, all records suggest a periodicity near ~1500 years, reminiscent of the cycles characteristic of Marine Isotope Stage 3<sup>[8]</sup>. These cycles are absent from existing records of TSI<sup>[9]</sup>, questioning the millennial-scale solar-climate connection.  
+<p> Remarkably, all records suggest a periodicity near ~1500 years, reminiscent of the cycles characteristic of Marine Isotope Stage 3<sup>[8]</sup>. These cycles are absent from existing records of TSI<sup>[9]</sup>, questioning the millennial-scale solar-climate connection.</p>  
 
 ### The role of the sun
 
