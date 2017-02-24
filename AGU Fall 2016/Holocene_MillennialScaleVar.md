@@ -5,6 +5,7 @@
 </div>
 
 <img src="http://www.organicdatacuration.org/linkedearth/images/5/51/EarthLinked_Banner_blue_NoShadow.jpg">
+
 # Testing the Millennial-Scale Holocene Solar-Climate Connection in the Indo-Pacific Warm Pool
 
 <p>D. Khider<sup>1</sup>, J. Emile-Geay<sup>1</sup>, N. McKay <sup>2</sup>, C.S. Jackson <sup>3</sup>, C. Rouston <sup>2</sup></p>
@@ -197,12 +198,11 @@ Mean periodicity &#177; standard error = 2391 &#177; 138 years.
 
 <p>Despite large uncertainties in the location of the spectral peak within each individual record arising from age model uncertainty, sea surface variability of ~1000 years, ~1500 years, and ~2500 years are present in at least 70-95% of the ensemble spectra.</p>
 
-<p> Remarkably, all records suggest a periodicity near ~1500 years, reminiscent of the cycles characteristic of Marine Isotope Stage 3<sup>[8]</sup>. These cycles are absent from existing records of TSI<sup>[9]</sup>, questioning the millennial-scale solar-climate connection.
+<p> Remarkably, all records suggest a periodicity near ~1500 years, reminiscent of the cycles characteristic of Marine Isotope Stage 3<sup>[8]</sup>. These cycles are absent from existing records of TSI<sup>[9]</sup>, questioning the millennial-scale solar-climate connection.  
 
 ### The role of the sun
 
 ![png](output_18_1.png)
-
 
 <p>The mean phase &#177; standard deviation is -17&#177;55&#176; for the periodicity centered around ~1000 years and 10&#177;97&#176; for the periodicity centered around ~2500 years.</p>
 
