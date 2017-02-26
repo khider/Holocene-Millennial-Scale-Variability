@@ -1,7 +1,7 @@
 
 <div class="alert alert-warning" role="alert" style="margin: 10px">
 <p><b>NOTE</b></p>
-<p>This is Markdown rendition of a <a href ='http://jupyter.org'>Jupyter Notebook</a>.</p>
+<p>This is Markdown rendition of a <a href ='http://jupyter.org'>Jupyter Notebook</a> that has been edited to provide description of the codes.</p>
 </div>
 
 <img src="http://www.organicdatacuration.org/linkedearth/images/5/51/EarthLinked_Banner_blue_NoShadow.jpg">
@@ -32,12 +32,6 @@ All the data used in this study are availabled on the <a href="http://wiki.linke
 </ol>
 
 <p>The LinkedEarth wiki can be queried using a variety a methods detailed <a href="http://wiki.linked.earth/Querying_the_Datasets#Querying_Linked_Earth_Data_from_another_Program.2FScript"> here </a>. The code below describes a query made in the <a href='https://www.w3.org/TR/rdf-sparql-query/'>SPARQL</a> language.</p>
-
-<div class="alert alert-warning" role="alert" style="margin: 10px">
-<p><b>NOTE</b></p>
-<p>We are working on GUI-based queries for the wiki.</p>
-</div>
-
 
 ```python
 %%python
@@ -112,10 +106,10 @@ for item in res['results']['bindings']:
     http://wiki.linked.earth/Special:URIResolver/MD98-2D2170.Stott.2004
     http://wiki.linked.earth/Special:URIResolver/MD01-2D2378.Xu.2008
 
-
 <div class="alert alert-warning" role="alert" style="margin: 10px">
-<p><b>NOTE</b></p>
-<p>We are working on a way to upload the LiPD files directly into the workspace of a Jupyter Notebook</p>
+<p><b>Coming soon on LinkedEarth</b></p>
+<p>GUI-based queries because one of us had to learn SPARQL so you don't have to.</p>
+<p> Science in the cloud: Records will be directly uploaded from the Wiki into the workspace. </p>
 </div>
 
 The locations of the records resulting from the queries are plotted on the map below.
@@ -125,7 +119,9 @@ The locations of the records resulting from the queries are plotted on the map b
 
 ## Age model
 
-The age models for each of the sedimentary records considered in this study were obtained using the Bchron software<sup>[5]</sup>. Jupyter Notebook allows to switch between the Python and R languages easily using <a href='https://ipython.org/ipython-doc/3/interactive/magics.html'>cell magics</a>.
+The age models for each of the sedimentary records considered in this study were obtained using the Bchron software<sup>[5]</sup>. Bchron returns ensemble age models that take into consideration the uncertainty in the radiocarbon measurements, in the calibration curve, and in the reservoir age of the ocean.
+
+Bchron was originally coded in the R language. Since Jupyter Notebook allows to switch between the Python and R (even Matlab, see below) languages easily using <a href='https://ipython.org/ipython-doc/3/interactive/magics.html'>cell magics</a>, these codes can be reused without any modifications within the same environment.
 
 ![png](agemodel.png)
 
@@ -136,16 +132,16 @@ Holocene periodicities were inferred from the Lomb-Scargle periodogram<sup>[6]</
 ![png](spectra.png)
 
 <div class="alert alert-warning" role="alert" style="margin: 10px">
-<p><b>NOTE</b></p>
-<p>Standard adoptions also allows to build codes for the community by the community. The LinkedEarth team is currently building Python and R packages for the analysis of paleoclimate data.</p>
+<p><b>Coming soon on LinkedEarth </b></p>
+<p>Standard adoption also allows to build codes for the community by the community. The LinkedEarth team is currently building Python and R packages for the analysis of paleoclimate data.</p>
 <p> For the R version, see <a href='http://nickmckay.github.io/GeoChronR/'>GeochronR</a>.</p>
 <p> For the Python version, see <a href='http://pythonhosted.org/pyleoclim/'>Pyleoclim</a>. </p>
 </div>
 
 ### Cross-Wavelet Analysis
-We performed cross-wavelet analysis<sup>[7]</sup> between each realization of the sedimentary records and the TSI record of ref 9. Since the cross-wavelet analysis code was written in the Matlab language, we use pymatbridge to run a m-file within the Python environment.
+We performed cross-wavelet analysis<sup>[7]</sup> between each realization of the sedimentary records and the TSI record of ref 9. Since the cross-wavelet analysis code was written in the Matlab language, we use pymatbridge to run a m-file within the Python environment (see the code below).
 
-Python is a "glue" language, allowing codes already written in R and Matlab to be reused.
+So far, this Notebook has made use of Python, R, and Matlab codes.
 
 ```python
 # Get a Matlab session started
@@ -206,6 +202,17 @@ Mean periodicity &#177; standard error = 2391 &#177; 138 years.
 
 <p>The mean phase &#177; standard deviation is -17&#177;55&#176; for the periodicity centered around ~1000 years and 10&#177;97&#176; for the periodicity centered around ~2500 years.</p>
 
+## Key points
+<ol>
+<li> The large age model uncertainty inherent to paleoceanographic reconstructions prevents meaningful analysis of periodicities from one single record. </li>
+<li> Synthesis of multple records suggests robust periodicities centered around ~1000 years, ~1500 years and ~2500 years in sea surface temperature variability within the Indo-Pacific Warm Pool. </li>
+</br>
+<p style="font-weight:bold"> We cannot discard the possibility that the sun might have paced millennial-scale climate variability over the Holocene. </p>
+</br>
+<li> Refuting or accepting the solar forcing hypothesis will require additional records with a global coverage.</li>
+<li> LinkedEarth aims to facilitate synthesis work to answer pressing questions in paleoclimatology. </li>
+</ol>
+
 ## Future Work
 <ol>
 <li> <b>Expand the database</b> to global coverage. </li>
@@ -221,17 +228,6 @@ Mean periodicity &#177; standard error = 2391 &#177; 138 years.
 </ul>
 
 <p style="font-weight:bold"> The ultimate goal of LinkedEarth is to allow scientists to spend more time on science, less on issues computers can solve. </p>
-
-## Key points
-<ol>
-<li> The large age model uncertainty inherent to paleoceanographic reconstructions prevents meaningful analysis of periodicities from one single record. </li>
-<li> Synthesis of multple records suggests robust periodicities centered around ~1000 years, ~1500 years and ~2500 years in sea surface temperature variability within the Indo-Pacific Warm Pool. </li>
-</ol>
-<p style="font-weight:bold"> We cannot discard the possibility that the sun might have paced millennial-scale climate variability over the Holocene. </p>
-<ol>
-<li> Refuting or accepting the solar forcing hypothesis will require additional records with a global coverage.</li>
-<li> LinkedEarth aims to facilitate synthesis work to answer pressing questions in paleoclimatology. </li>
-</ol>
 
 ## References
 1.	Bond, G., et al., Persistent solar influence on North Atlantic climate during the Holocene. Science, 2001. 294(2130): p. 2130-2136.
